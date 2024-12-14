@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className="relative">
             <img
-                className="w-full h-screen object-cover"
+                className="w-full h-[90vh] object-cover"
                 src={presentation}
                 alt="Presentation Background"
             />
