@@ -4,7 +4,7 @@ import { images } from "../../utils/data";
 import Scroll from "../Title/Scroll";
 export default function Blocks() {
     return (
-        <div className="mt-[120px]">
+        <div className="mt-[400px]">
             <Title
                 text="infinite combinations"
                 title="Huge collection of sections"

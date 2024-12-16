@@ -19,13 +19,13 @@ export default function Card() {
         >
             {/* Front Side */}
             <a.div
-                className="absolute w-full h-full  text-white flex items-center  justify-center rounded-lg backface-hidden"
+                className="absolute w-full h-[500px]  text-white flex items-center  justify-center rounded-lg backface-hidden"
                 style={{ opacity: opacity.to((o) => 1 - o), transform }}
             >
                 <img
                     src={front}
                     alt="Back"
-                    className="w-full h-full shadow-lg object-cover rounded-lg"
+                    className="w-full h-[500px] shadow-lg object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 flex flex-col items-center bg-[#1a73e8] opacity-80  justify-center">
                     <p>
@@ -44,7 +44,7 @@ export default function Card() {
             {/* Back Side */}
 
             <a.div
-                className="absolute w-full h-full text-white flex items-center justify-center  backface-hidden"
+                className="absolute w-full h-[500px]  text-white flex items-center justify-center  backface-hidden"
                 style={{
                     opacity,
                     transform,
@@ -54,18 +54,20 @@ export default function Card() {
                 <img
                     src={front}
                     alt="Front"
-                    className="w-full h-full object-cover shadow-lg rounded-lg"
+                    className="w-full h-[500px]  object-cover shadow-lg rounded-lg"
                 />
                 <div className="absolute inset-0 bg-[#1a73e8] opacity-80  flex flex-col items-center justify-center">
                     <h2 className="text-[30px] font-bold text-white">
                         Discover More
                     </h2>
-                    <p className="text-white text-center">
+                    <p className="text-white text-center mt-3 ">
                         You will save a lot of time going from prototyping to
                         full-functionnal code because all elements are
                         implemented
                     </p>
-                    <button className="uppercase">start with header</button>
+                    <button className="uppercase border py-2 text-sm px-2 bg-white rounded mt-5 text-black">
+                        start with header
+                    </button>
                 </div>
             </a.div>
         </div>
