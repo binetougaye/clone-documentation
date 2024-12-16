@@ -2,10 +2,10 @@ import React from "react";
 import { data } from "../../utils/data";
 export default function Chiffre() {
     return (
-        <div className="flex">
+        <div className="flex gap-12 px-14">
             {data &&
                 data?.map((item, index) => (
-                    <div className="flex flex-col justify-center items-center">
+                    <div className="flex mt-5 flex-col justify-center items-center">
                         <p className="text-[48px] text-[#1a73e8] font-medium">
                             {item.num}
                         </p>
