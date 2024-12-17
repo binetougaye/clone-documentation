@@ -19,7 +19,11 @@ export default function Blocks() {
                     {images &&
                         images?.map((item, index) => (
                             <div className="bg-white rounded-lg p-4 shadow-lg">
-                                <img src={item.image} alt="" />
+                                <img
+                                    src={item.image}
+                                    alt=""
+                                    className="w-96 h-32 object-cover"
+                                />
                             </div>
                         ))}
                 </div>

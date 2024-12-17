@@ -4,6 +4,10 @@ import Header from './Components/Header/Header';
 import Chiffre from './Components/Chiffres/Chiffre';
 import Docs from './Components/Docs/Docs';
 import Blocks from './Components/Design_Blocks/Blocks';
+import Navigation from './Components/Navigation/Navigation';
+import Inputs from './Components/InputAreas/Inputs';
+import Catchers from './Components/Catchers/Catchers';
+import Elements from './Components/Elements/Elements';
 
 function App() {
   return (
@@ -13,6 +17,10 @@ function App() {
         <Chiffre />
         <Docs />
         <Blocks />
+        <Navigation />
+        <Inputs />
+        <Catchers />
+        <Elements />
       </div>
 
 
