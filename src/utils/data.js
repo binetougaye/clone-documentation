@@ -2,6 +2,7 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import FlipToFrontIcon from '@mui/icons-material/FlipToFront';
 import PriceChangeIcon from '@mui/icons-material/PriceChange';
 import DevicesIcon from '@mui/icons-material/Devices';
+import ScheduleIcon from '@mui/icons-material/Schedule';
 import img1 from "../assets/images/blogs.jpeg"
 import img2 from "../assets/images/call-to-action.jpeg"
 import img3 from "../assets/images/content-sections.jpeg"
@@ -33,6 +34,14 @@ import badge from "../assets/images/badges.png"
 import progress from "../assets/images/progress.png"
 import tables from '../assets/images/tables.png'
 import typo from "../assets/images/typography.png"
+import about from "../assets/images/about-us.jpeg"
+import contacts from "../assets/images/contact.jpeg"
+import signin from "../assets/images/signin-basic.jpeg"
+import author from "../assets/images/author.jpeg"
+import FlagIcon from '@mui/icons-material/Flag';
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+import AppsIcon from '@mui/icons-material/Apps';
+import StarIcon from '@mui/icons-material/Star';
 export const data = [
     {
         num: "70+",
@@ -226,6 +235,109 @@ export const elements = [
         text: "Typography",
         example: "2 examples"
     },
+
+
+
+]
+export const items = [
+    {
+        image: about,
+        text: "About Us Page",
+    },
+    {
+        image: contacts,
+        text: "Contact Us Page",
+
+    },
+    {
+        image: signin,
+        text: "Sign In Page",
+    },
+    {
+        image: author,
+        text: "Author Page",
+
+    },
+
+
+
+
+]
+export const card = [
+    {
+        icon: <FlagIcon />,
+        title: "Getting Started",
+        text: "Check the possible ways of working with our product and the necessary files for building your own project.",
+        cta: "Let's start",
+        bg: "flex text-white gap-3 rounded-md h-[180px] py-3 px-5 bg-[#1a73e8]",
+        titleColor: "text-[#fff] text-[20px] font-bold",
+        textClass: "mt-3 text-white",
+        iconColors: "mt-3 text-white"
+    },
+    {
+        icon: <PrecisionManufacturingIcon />,
+        title: "Plugins",
+        text: "Get inspiration and have an overview about the plugins that we used to create the Material Kit.",
+        cta: "Read more",
+        bg: "flex bg-[#f8f9fa] gap-3 rounded-md py-3 px-5   h-[180px]",
+        iconColor: 'text-[#1a73e8]',
+        titleColor: "text-[#344767] text-[20px] font-bold",
+        textClass: "mt-3 text-[#7b809a]",
+        iconColors: "mt-3 text-[#1a73e8]"
+
+    },
+    {
+        icon: <AppsIcon />,
+        title: "Components",
+        text: "Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster.",
+        cta: "Read more",
+        bg: "flex bg-[#f8f9fa] gap-3 py-3 px-5  rounded-md h-[180px]",
+        iconColor: 'text-[#1a73e8]',
+        titleColor: "text-[#344767] text-[20px] font-bold",
+        textClass: "mt-3 text-[#7b809a]",
+        iconColors: "mt-3 text-[#1a73e8]"
+    },
+
+
+
+
+
+]
+export const testimony = [
+    {
+        nom: "Nick Willever",
+        date: "1 day ago",
+        text: "This is an excellent product, the documentation is excellent and helped me get things done more efficiently.",
+        icon: <ScheduleIcon fontSize='small' />,
+        textColor: "text-[#7b809a] text-[16px] mt-5",
+        paraColor: "text-[#7b809a]",
+        bg: "h-[280px] w-[380px] ",
+        starColor: "text-[#7b809a] flex mt-5",
+        star: [<StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />]
+    },
+    {
+        nom: "Shailesh Kushwaha",
+        date: "1 week ago",
+        text: "I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!",
+        icon: <ScheduleIcon fontSize='small' />,
+        textColor: "text-white text-[16px]",
+        bg: "bg-[#1a73e8] rounded-md shadow text-white py-3 px-5 w-[380px]   h-[280px]",
+        star: [<StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />],
+        starColor: "text-white flex mt-5"
+
+    },
+    {
+        nom: "Samuel Kamuli",
+        date: "3 weeks ago",
+        text: "Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!.",
+        icon: <ScheduleIcon fontSize='small' />,
+        bg: "  py-3 px-5  rounded-md h-[280px] w-[380px]",
+        textColor: "text-[#7b809a] text-[16px] mt-5",
+        starColor: "text-[#7b809a] flex mt-5",
+        star: [<StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />]
+    },
+
+
 
 
 

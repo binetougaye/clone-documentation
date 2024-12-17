@@ -8,6 +8,12 @@ import Navigation from './Components/Navigation/Navigation';
 import Inputs from './Components/InputAreas/Inputs';
 import Catchers from './Components/Catchers/Catchers';
 import Elements from './Components/Elements/Elements';
+import Sec from './Components/SectionCreativity/Sec';
+import SectionCTA from './Components/CTA/SectionCTA';
+import SecCard from './Components/SecCard/SecCard';
+import Testimony from './Components/Testimonials/Testimony';
+import Logo from './Components/Logo/Logo';
+import Download from './Components/DownloadSec/Download';
 
 function App() {
   return (
@@ -21,6 +27,12 @@ function App() {
         <Inputs />
         <Catchers />
         <Elements />
+        <Sec />
+        <SectionCTA />
+        <SecCard />
+        <Testimony />
+        <Logo />
+        <Download />
       </div>
 
 
