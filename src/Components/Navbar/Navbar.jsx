@@ -36,7 +36,7 @@ export default function Navbar() {
                     menuOpen ? "flex" : "hidden"
                 } flex-col md:flex hidden md:flex-row md:gap-12 text-[#344767] w-full md:w-auto mt-60 md:mt-0`}
             >
-                <div className="flex  flex-col md:flex-row gap-5">
+                <div className="flex flex-col md:flex-row gap-5">
                     <p className="flex gap-1 items-center text-[#344767] text-[16px]">
                         <DashboardIcon />
                         <span className="text-[14px] font-light">Pages</span>
