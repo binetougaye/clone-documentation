@@ -10,7 +10,6 @@ import CloseIcon from "@mui/icons-material/Close";
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    // Fonction pour basculer l'état du menu (ouvrir/fermer)
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -20,10 +19,9 @@ export default function Navbar() {
             <div className="flex justify-between w-full md:w-auto items-center">
                 <h1 className="text-[#344767]">Material Kit 2</h1>
 
-                {/* Bouton hamburger */}
                 <button
                     className="md:hidden   text-[#344767] p-2"
-                    onClick={toggleMenu} // Toggle menu on click
+                    onClick={toggleMenu}
                 >
                     {menuOpen ? (
                         <CloseIcon style={{ fontSize: 30 }} />
@@ -33,7 +31,6 @@ export default function Navbar() {
                 </button>
             </div>
 
-            {/* Menu: afficher ou cacher en fonction de l'état */}
             <div
                 className={`${
                     menuOpen ? "flex" : "hidden"
