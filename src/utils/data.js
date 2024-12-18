@@ -42,6 +42,16 @@ import FlagIcon from '@mui/icons-material/Flag';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import AppsIcon from '@mui/icons-material/Apps';
 import StarIcon from '@mui/icons-material/Star';
+import bootstrap from "../assets/images/bootstrap5.jpeg"
+import tailwind from "../assets/images/icon-tailwind.jpeg"
+import vue from "../assets/images/vue (1).jpeg"
+import angular from "../assets/images/angular (1).jpeg"
+import react from "../assets/images/react (1).jpeg"
+import sketch from "../assets/images/sketch.jpeg"
+import facebook from "../assets/images/facebook.svg"
+import tweeter from "../assets/images/twitter.svg"
+import github from "../assets/images/github.svg"
+import youtube from "../assets/images/youtube.svg"
 export const data = [
     {
         num: "70+",
@@ -311,7 +321,7 @@ export const testimony = [
         icon: <ScheduleIcon fontSize='small' />,
         textColor: "text-[#7b809a] text-[16px] mt-5",
         paraColor: "text-[#7b809a]",
-        bg: "h-[280px] w-[380px] ",
+        bg: "h-[280px] md:w-[380px] w-full  ",
         starColor: "text-[#7b809a] flex mt-5",
         star: [<StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />]
     },
@@ -321,7 +331,7 @@ export const testimony = [
         text: "I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!",
         icon: <ScheduleIcon fontSize='small' />,
         textColor: "text-white text-[16px]",
-        bg: "bg-[#1a73e8] rounded-md shadow text-white py-3 px-5 w-[380px]   h-[280px]",
+        bg: "bg-[#1a73e8] rounded-md shadow text-white py-3 px-5 md:w-[380px] w-full  h-[280px]",
         star: [<StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />],
         starColor: "text-white flex mt-5"
 
@@ -331,7 +341,7 @@ export const testimony = [
         date: "3 weeks ago",
         text: "Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!.",
         icon: <ScheduleIcon fontSize='small' />,
-        bg: "  py-3 px-5  rounded-md h-[280px] w-[380px]",
+        bg: "  py-3 px-5  rounded-md h-[280px] md:w-[380px] w-full",
         textColor: "text-[#7b809a] text-[16px] mt-5",
         starColor: "text-[#7b809a] flex mt-5",
         star: [<StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />, <StarIcon />]
@@ -340,5 +350,71 @@ export const testimony = [
 
 
 
+
+]
+export const languages = [
+    {
+        image: bootstrap,
+
+    },
+    {
+        image: tailwind,
+
+
+    },
+    {
+        image: vue,
+
+    },
+    {
+        image: angular,
+    },
+    {
+        image: react,
+    },
+    {
+        image: sketch,
+    },
+
+
+
+
+]
+export const socials = [
+    {
+        image: facebook,
+
+    },
+    {
+        image: tweeter,
+
+
+    },
+    {
+        image: github,
+
+    },
+    {
+        image: youtube,
+    },
+
+
+
+
+
+]
+export const company = [
+    "About us", "Freebies", "Premium Tools", "Blog"
+]
+export const resources = [
+    "Illustrations", "bits & snippets", "affiliate program"
+
+]
+export const support = [
+    "contact us", "knowledge center", "custom development", "sponsorships"
+
+]
+export const legal = [
+    "terms & conditions", "privacy policy", "licenses (EULA)",
 
 ]

@@ -2,7 +2,7 @@ import React from "react";
 import { data } from "../../utils/data";
 export default function Chiffre() {
     return (
-        <div className="flex gap-12 px-14">
+        <div className="flex md:flex-row flex-col md:flex-nowrap flex-wrap  justify-center items-center gap-12 px-14">
             {data &&
                 data?.map((item, index) => (
                     <div className="flex mt-5 flex-col justify-center items-center">

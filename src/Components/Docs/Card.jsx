@@ -14,24 +14,24 @@ export default function Card() {
 
     return (
         <div
-            className="w-[30%] relative cursor-pointer perspective-1000"
+            className="md:w-[30%] w-full   relative cursor-pointer perspective-1000"
             onClick={() => setFlipped(!flipped)}
         >
             {/* Front Side */}
             <a.div
-                className="absolute w-full h-[500px]  text-white flex items-center  justify-center rounded-lg backface-hidden"
+                className="absolute w-full md:h-[500px] h-[250px]    text-white flex items-center  justify-center rounded-lg backface-hidden"
                 style={{ opacity: opacity.to((o) => 1 - o), transform }}
             >
                 <img
                     src={front}
                     alt="Back"
-                    className="w-full h-[500px] shadow-lg object-cover rounded-lg"
+                    className="w-full md:h-[500px] h-full shadow-lg object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 flex flex-col items-center bg-[#1a73e8] opacity-80  justify-center">
                     <p>
                         <TouchAppIcon fontSize="large" />
                     </p>
-                    <h2 className="text-[30px] mt-5 font-bold text-white">
+                    <h2 className="md:text-[30px] text-[20px]  mt-5 font-bold text-white">
                         Free the Material kit
                     </h2>
                     <p className="text-white text-center font-light mt-3">
@@ -44,7 +44,7 @@ export default function Card() {
             {/* Back Side */}
 
             <a.div
-                className="absolute w-full h-[500px]  text-white flex items-center justify-center  backface-hidden"
+                className="absolute w-full md:h-[500px] h-[250px]    text-white flex items-center justify-center  backface-hidden"
                 style={{
                     opacity,
                     transform,
@@ -54,7 +54,7 @@ export default function Card() {
                 <img
                     src={front}
                     alt="Front"
-                    className="w-full h-[500px]  object-cover shadow-lg rounded-lg"
+                    className="w-full md:h-[500px] h-full  object-cover shadow-lg rounded-lg"
                 />
                 <div className="absolute inset-0 bg-[#1a73e8] opacity-80  flex flex-col items-center justify-center">
                     <h2 className="text-[30px] font-bold text-white">

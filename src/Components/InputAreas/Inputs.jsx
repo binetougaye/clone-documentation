@@ -3,13 +3,13 @@ import Scroll from "../Title/Scroll";
 import { inputs } from "../../utils/data";
 export default function Inputs() {
     return (
-        <div className="mt-[400px]">
-            <div className="flex gap-12 mt-20">
+        <div className="mt-[100px]">
+            <div className="flex md:flex-row flex-col md:justify-start justify-center md:items-start items-center gap-12 mt-20">
                 <Scroll
                     title="Input Areas"
                     text="50+ elements that you need for text manipulation and insertion"
                 />
-                <div className="grid grid-cols-3 w-[80%] gap-x-5 gap-y-5">
+                <div className="grid md:grid-cols-3 grid-cols-1 w-[80%] gap-x-5 gap-y-5">
                     {inputs &&
                         inputs?.map((item, index) => (
                             <div>
@@ -21,10 +21,12 @@ export default function Inputs() {
                                     />
                                 </div>
                                 <div className="mt-5">
-                                    <p className="text-[#344767] font-bold">
+                                    <p className="text-[#344767] md:text-start text-center font-bold">
                                         {item.text}{" "}
                                     </p>
-                                    <p>{item.example} </p>
+                                    <p className=" md:text-start text-center ">
+                                        {item.example}{" "}
+                                    </p>
                                 </div>
                             </div>
                         ))}

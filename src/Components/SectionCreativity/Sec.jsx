@@ -11,8 +11,8 @@ export default function Sec() {
                 title="With our coded pages"
                 para="The easiest way to get started is to use one of our pre-built example pages"
             />
-            <div className="flex gap-12 mt-40">
-                <div className="grid grid-cols-2 w-[100%] gap-x-5 gap-y-5">
+            <div className="flex md:flex-row flex-col-reverse gap-12 mt-40">
+                <div className="grid md:grid-cols-2 grid-cols-1 w-[100%] gap-x-5 gap-y-5">
                     {items &&
                         items?.map((item, index) => (
                             <div>
@@ -23,9 +23,9 @@ export default function Sec() {
                                         className="rounded-lg  "
                                     />
                                 </div>
-                                <div className="mt-5">
+                                <div className="mt-5 md:text-start text-center">
                                     <p className="text-[#344767] font-bold">
-                                        {item.text}{" "}
+                                        {item.text}
                                     </p>
                                 </div>
                             </div>

@@ -3,7 +3,7 @@ import { card } from "../../utils/data";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 export default function SecCard() {
     return (
-        <div className="flex mt-5 gap-5">
+        <div className="flex md:flex-row flex-col mt-5 gap-5">
             {card &&
                 card?.map((item, index) => (
                     <div className={item.bg}>

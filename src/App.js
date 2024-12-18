@@ -14,12 +14,15 @@ import SecCard from './Components/SecCard/SecCard';
 import Testimony from './Components/Testimonials/Testimony';
 import Logo from './Components/Logo/Logo';
 import Download from './Components/DownloadSec/Download';
+import Language from './Components/Languages/Language';
+import Social from './Components/Social/Social';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <div >
       <Header />
-      <div className="relative top-[-50px] px-12 mx-12 bg-white opacity-80 shadow-2xl z-10">
+      <div className="relative top-[-50px]  md:px-12 px-8 md:mx-12 mx-0 bg-white opacity-80 shadow-2xl z-10">
         <Chiffre />
         <Docs />
         <Blocks />
@@ -33,8 +36,10 @@ function App() {
         <Testimony />
         <Logo />
         <Download />
+        <Language />
+        <Social />
       </div>
-
+      <Footer />
 
     </div>
   );

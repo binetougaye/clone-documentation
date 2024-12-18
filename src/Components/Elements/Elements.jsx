@@ -4,13 +4,13 @@ import { elements } from "../../utils/data";
 
 export default function Elements() {
     return (
-        <div className="mt-[400px]">
-            <div className="flex gap-12 mt-20">
+        <div className="mt-[100px]">
+            <div className="flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center gap-12 mt-20">
                 <Scroll
                     title="Elements"
                     text="80+ carefully crafted small elements that come with multiple colors and shapes"
                 />
-                <div className="grid grid-cols-3 w-[80%] gap-x-5 gap-y-5">
+                <div className="grid md:grid-cols-3 grid-cols-1 w-[80%] gap-x-5 gap-y-5">
                     {elements &&
                         elements?.map((item, index) => (
                             <div>
@@ -21,8 +21,8 @@ export default function Elements() {
                                         className="w-96 h-32 object-cover"
                                     />
                                 </div>
-                                <div className="mt-5">
-                                    <p className="text-[#344767] font-bold">
+                                <div className="mt-5 md:text-start text-center">
+                                    <p className="text-[#344767]  font-bold">
                                         {item.text}{" "}
                                     </p>
                                     <p>{item.example} </p>

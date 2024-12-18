@@ -7,7 +7,7 @@ export default function Testimony() {
                 <h3 className="text-[#344767] text-[36px] font-bold">
                     Trusted by over
                 </h3>
-                <h1 className="text-[#1a73e8] font-bold text-[36px]">
+                <h1 className="text-[#1a73e8] font-bold md:text-[36px] text-[24px]">
                     1,679,477+ web developers
                 </h1>
                 <p className="text-[#7b809a] text-center text-[20px]">
@@ -16,7 +16,7 @@ export default function Testimony() {
                     products.
                 </p>
             </div>
-            <div className="flex justify-center mt-20 items-center">
+            <div className="flex md:flex-row flex-col justify-center mt-20 items-center">
                 {testimony &&
                     testimony?.map((item, index) => (
                         <div className={item.bg}>
